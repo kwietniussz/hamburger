@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background: rgb(66, 133, 60);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(4, 80, 33);
+    box-shadow: inset 0vh 2vh 10vh black;
+
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    line-height: 10vh;
+    text-align: center;
+}
+
+.fas {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 6vh;
+    line-height: 10vh;
+    color: white;
+    transition: 0.2s;
+}
+
+.fas:hover {
+    cursor: pointer;
+    color: rgb(3, 58, 24);
+
+}
+
+.hamburger {
+    position: absolute;
+    top: 15vh;
+    right: 5vw;
+    width: 200px;
+    height: 400px;
+    background-color: rgb(4, 80, 33);
+    display: none;
+    flex-direction: column;
+
+}
+
+.hamburger li {
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s
+}
+
+.hamburger li a {
+    text-decoration: none;
+    line-height: calc(400px/7);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.hamburger li:hover {
+    background-color: rgb(3, 58, 24);
+}
+
+.active {
+    display: flex;
+}
